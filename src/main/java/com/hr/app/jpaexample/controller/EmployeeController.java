@@ -46,5 +46,12 @@ public class EmployeeController {
         return employeeService.findByDepartmentAndSalaryRange(departmentName, minSalary, maxSalary);
     }
 
+    //MY
+//    @GetMapping("/fetch1")
+//    public List<EmployeeDto> detailsOfEmp1(){
+//
+//        return employeeService.detailsOfEmp();
+//    }
+
 }
 

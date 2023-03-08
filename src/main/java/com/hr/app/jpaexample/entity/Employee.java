@@ -18,7 +18,7 @@ import org.springframework.context.annotation.Lazy;
  * @created on 06 Mar, 2023 10:23 PM
  */
 
-@Data
+@Data //don't need to mention constructor, setter, and getter method
 @Entity
 @Table(name = "employees")
 public class Employee {

@@ -8,11 +8,13 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.ReportingPolicy;
 import org.mapstruct.factory.Mappers;
+import org.springframework.data.jpa.repository.Query;
 
-@Mapper
+@Mapper// no need to create an ArrayList
 public interface EmployeeMapper {
     EmployeeMapper INSTANCE = Mappers.getMapper(EmployeeMapper.class);
     EmployeeDto toEmployeeDto(Employee employee);
     List<EmployeeDto> toEmployeeDtoList(List<Employee> employees);
+
 
 }
